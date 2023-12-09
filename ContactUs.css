@@ -47,36 +47,6 @@ li a:hover{
   text-transform: uppercase;
 }
 
-.search-bar {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-}
-
-.search-bar input {
-  padding: 10px;
-  border: none;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  outline: none;
-  
-}
-
-.search-bar button {
-  background-color: #44366d;
-  color: #fff;
-  border: none;
-  padding: 10px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  cursor: pointer;
-}
-
-.search-bar button:hover {
-  background-color: #3081D0;
-}
-
-
 .logo img{
   position: absolute;
   margin-top: 5px;
@@ -87,7 +57,7 @@ li a:hover{
 
 /*NAV Fundi*/
 
-/*HOME Fillimi*/
+/*Container Fillimi*/
 
 .container{
   width: 85%;
