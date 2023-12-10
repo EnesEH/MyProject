@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login & Registration Form</title>
+    <link rel="icon" href="./images/train.png" sizes="300x300" type="image/png">
+    <title>Login & Registration</title>
     <link rel="stylesheet" href="Login.css">
+    <script src="skriptiJashtem.js"></script>
 </head>
 <body>
     <div class="logo">
-        <a href="#"><img src="./images/logo.png" alt=""></a>
+        <a href="./index.html"><img src="./images/logo.png" alt=""></a>
     </div>
       <nav class="nav-container">
         <ul>
@@ -19,40 +21,36 @@
         </ul>        
     </nav>
     <div class="container">
-    <input type="checkbox" id="check">
-      <div class="login form">
-        <header>Login</header>
-        <form action="#">
-            <input type="text" placeholder="Enter your email">
-            <input type="password" placeholder="Enter your password">
-            <a href="#">Forgot password?</a>
-            <input type="button" class="button" value="Login">
-           </form>
-           <div class="signup">
-            <span class="signup">Don't have an account?
-                <label for="check">Signup</label>
-            </span>
-     </div> 
-    </div>
-   
+        <input type="checkbox" id="check">
+        <div class="login form">
+            <header>Login</header>
+            <form onsubmit="validateLogin(); return false;">
+                <input type="text" id="loginEmail" placeholder="Enter your email">
+                <input type="password" id="loginPassword" placeholder="Enter your password">
+                <a href="#">Forgot password?</a>
+                <input type="submit" class="button" value="Login">
+            </form>
+            <div class="signup">
+                <span class="signup">Don't have an account?
+                    <label for="check" onclick="showRegistration()">Signup</label>
+                </span>
+            </div>
+        </div>
 
-        
         <div class="registration form">
             <header>Signup</header>
-            <form action="#">
-                <input type="text" placeholder="Enter your email">
-                <input type="password" placeholder="Create a password">
-                <input type="password" placeholder="Confirm your password">
-                <input type="button" class="button" value="Signup">
+            <form onsubmit="validateSignup(); return false;">
+                <input type="text" id="signupEmail" placeholder="Enter your email">
+                <input type="password" id="signupPassword" placeholder="Create a password">
+                <input type="password" id="confirmPassword" placeholder="Confirm your password">
+                <input type="submit" class="button" value="Signup">
             </form>
             <div class="signup">
                 <span class="signup">Already have an account?
-                    <label for="check">Login</label>
+                    <label for="check" onclick="showLogin()">Login</label>
                 </span>
-
             </div>
         </div>
-      
     </div>
    </body>
 </html>

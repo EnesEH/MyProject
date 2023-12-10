@@ -78,9 +78,7 @@ ul{
 #check:checked ~.login{
     display: none;
 }
-#check{
-    display: :none;
-}
+
 .container .form{
     padding: 2rem;
 }
